@@ -1,0 +1,17 @@
+[plex]
+shilling
+b4
+
+[cephosd]
+b1
+b3
+b4
+ceph01
+ceph02
+ceph03
+ceph04
+lira
+
+[desktops]
+lira
+bitcoin
