@@ -1,0 +1,15 @@
+#!/usr/bin/env ansible-playbook
+---
+
+- name: Install/upgrade Plex Media Server
+  hosts: plex
+  become: true
+
+  vars:
+    plex_version: 1.3.4.3285-b46e0ea
+
+  tasks:
+    - name: Install Plex
+      apt:
+        deb: "https://downloads.plex.tv/plex-media-server/{{ plex_version }}/plexmediaserver_{{ plex_version }}_amd64.deb"
+        state: present
